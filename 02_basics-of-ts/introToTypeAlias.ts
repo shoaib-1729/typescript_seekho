@@ -5,11 +5,13 @@
 // creating type of our own — for example we have to use certain type of data at multiple places then we can use type alias
 
 type User = {
-    name: string;
-    email: string;
-    isLoggedIn: boolean;
+    name: string
+    email: string
+    isLoggedIn: boolean
 }
 
+
+// now, User is custom data type joh humne banaya hai
 
 function createUser(user: User): void{
     console.log(user);
@@ -50,6 +52,25 @@ function makeCourse(course: myString): void{
 
 makeCourse("TypeScript");
 
+
+type Car = {
+    name: string
+    price: string
+    color: string
+    owner: string
+}
+
+function ownCar(car: Car): Car{
+    return car
+}
+
+
+ownCar({
+    name:"Mahindra",
+    price:"10L",
+    color:"Black",
+    owner:"Shoaib"
+})
 
 export {}
 

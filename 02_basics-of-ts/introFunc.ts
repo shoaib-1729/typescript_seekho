@@ -4,7 +4,6 @@ function addTwo(num: number){
     return num + 2
 }
 
-
 let myValue = addTwo(4)
 console.log(myValue);
 
@@ -102,23 +101,26 @@ const val3 = welcomeUserMsg("Others")
 
 console.log(val1, val2, val3)
 
-// case of native functions 
+// case of native functions
 
 // map
 const items = ["Aloo", "Matar", "Tamatar", "Pepsi"]
 
-const mappedItems = items.map((item)=> ({
+
+// specifying the return type is a good practice
+const mappedItems = items.map((item: string): {} => ({
     billedItems: item
 }))
 
 console.log(mappedItems)
 
-const filteredItems = items.filter((item)=> {
+
+// filter
+const filteredItems = items.filter((item): boolean => {
     return item === "Aloo" || item === "Matar" || item === "Tamatar" ? true : false;
 })
 
 console.log(filteredItems)
-
 
 
 
