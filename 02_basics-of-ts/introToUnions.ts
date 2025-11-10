@@ -83,3 +83,10 @@ function codeName(name: string | number){
 
 console.log(codeName("SummerXyz"))
 console.log(codeName(732))
+
+// another use case
+let seatAllotment: "upper" | "lower" | "middle"
+seatAllotment = "middle"
+seatAllotment = "lower"
+
+
