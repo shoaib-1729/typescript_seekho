@@ -51,32 +51,3 @@ newCar.name = "Suzuki"
 newCar.price = "20L"
 
 console.log(newCar);
-
-
-// ---------------------------------------------------------
-
-// ? keyword
-
-type Book = {
-    name: string
-    genre: string[]
-    price: string
-
-    // here publisher is optional
-    publisher?: string
-}
-
-
-function purchaseBook(book: Book){
-    return book;
-
-}
-
-
-const res = purchaseBook({
-    name: "Alchemist",
-    genre: ["Fiction", "Spirituality", "Self Help"],
-    price: "200",
-})
-
-console.log(res);

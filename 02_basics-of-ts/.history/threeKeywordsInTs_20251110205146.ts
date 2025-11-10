@@ -59,7 +59,7 @@ console.log(newCar);
 
 type Book = {
     name: string
-    genre: string[]
+    genre: string
     price: string
 
     // here publisher is optional
@@ -73,10 +73,8 @@ function purchaseBook(book: Book){
 }
 
 
-const res = purchaseBook({
+purchaseBook({
     name: "Alchemist",
-    genre: ["Fiction", "Spirituality", "Self Help"],
+    genre: "Fiction",
     price: "200",
 })
-
-console.log(res);

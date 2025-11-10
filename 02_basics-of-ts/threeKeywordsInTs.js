@@ -24,3 +24,12 @@ newCar._id.push("7182");
 newCar.name = "Suzuki";
 newCar.price = "20L";
 console.log(newCar);
+function purchaseBook(book) {
+    return book;
+}
+var res = purchaseBook({
+    name: "Alchemist",
+    genre: ["Fiction", "Spirituality", "Self Help"],
+    price: "200",
+});
+console.log(res);
