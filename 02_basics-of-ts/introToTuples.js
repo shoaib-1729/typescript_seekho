@@ -27,3 +27,7 @@ var res = greetUser({
 var name = res[0], id = res[1];
 console.log(res);
 console.log(res.join(""));
+var thor = ["Thor123", 8181];
+// tuples ki values change bhi kar sakte hai, immutable nahi hai python ki tarah
+thor[0] = "Superman818";
+console.log(thor);

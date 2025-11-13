@@ -35,6 +35,17 @@ console.log(res);
 console.log(res.join(""));
 
 
+// tuples with types
+type heroCodeName = [string, number]
+
+let thor: heroCodeName = ["Thor123", 8181]
+
+// tuples ki values change bhi kar sakte hai, immutable nahi hai python ki tarah
+thor[0] = "Superman818"
+
+console.log(thor);
+
+
 
 
 export {}
