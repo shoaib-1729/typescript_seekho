@@ -21,7 +21,7 @@ bookOrder("laptop", DeliveryStatus.PENDING)
 
 // some use cases
 const enum SeatAllotment{
-    // not alllowed, enums must be initialized with constant expressions
+    // not allowed, enums must be initialized with constant expressions
     // DEMO=getSeatNumber(),
     DEMO=1,
     UPPER="upper",
