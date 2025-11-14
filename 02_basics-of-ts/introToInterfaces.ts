@@ -1,4 +1,5 @@
 // interface is like a class but with very limited powers, a contract for types 
+// documentation ref: https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces
 
 // contract
 interface User{
